@@ -5,7 +5,7 @@ public class ArcheryChampion {
 	public static int[] solution(String[] info, String[] query) {
 		int[] answer = new int[query.length];
 		
-		for(int i = 0;)
+		//for(int i = 0;)
 		return answer;
 	}
 
