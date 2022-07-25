@@ -23,18 +23,18 @@ public class Brianstrouble {
 		answer = answer.contains("invalid") ? "invalid" : answer.trim(); // 재귀때문에 다른 문자 있을 수 있음
 
 		return answer;
-	}
+	} // cDDc
 
 	public void lowerCheck(String sentence) { 	// 소문자 있는지 체크 
 		int length = sentence.length();
 		
-		for(int i = 0; i < length; i++) {
+		for(int i = 0; i < length; i++) { // SpIpGpOpNpGJqOqA
 			char lower = sentence.charAt(i);
 			if(Character.isLowerCase(lower)) {	 // 소문자 있을 때 로직
 				if(lowerMap.containsKey(lower)) {	 // 이미 사용한 소문자일 경우 탈락
 					invalid();
 					return;
-				}
+				}  // aBcBcBa
 				lowerMap.put(lower, "");	 // 사용한 소문자 map 저장
 				
 				int lastIndex = sentence.lastIndexOf(lower); 	// 발견된 소문자의 마지막 위치 체크
@@ -53,8 +53,7 @@ public class Brianstrouble {
 					if(!anotherLower) { 	// 소문자 2개 -> rule2		
 						if(i != 0) {	 // 소문자 앞에 문자가 있다면 아무것도 해당 안되는 단어이므로 noLower() 해준후 rule2 수행
 							noLower(sentence, i);   
-						}
-						
+						}						
 						rule2(i+1, lastIndex, sentence, lower);
 
 					}else {		// 나머지 경우 -> rule1
@@ -118,7 +117,7 @@ public class Brianstrouble {
 		resentence = sentence.substring(lastIndex); // 남은 뒷단어 체크
 		if(resentence.length()!=0) {
 			lowerCheck(resentence);
-
+//aBBcBcBBa
 		}
 	}
 
@@ -127,7 +126,7 @@ public class Brianstrouble {
 			invalid();
 			return;
 		}
-		
+		//ASDASDASDaBBcBcBBa
 		String resentence = sentence.substring(firstIndex, lastIndex); // 다른 소문자 있는지 체크
 		String sentenceLower = resentence.toUpperCase();
 		if(!resentence.equals(sentenceLower)) { // 다른 소문자 있는경우, rule2 수행 한 문장으로 lowerCheck() 
