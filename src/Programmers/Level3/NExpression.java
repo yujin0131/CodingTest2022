@@ -14,13 +14,13 @@ public class NExpression {
 	public static int Operation(int N, int num) {
 		
 		if(num == 1) return num;
-		for(int i = 0; i < oper.length; i++) {
-			su * 10 + num
-			su * num
-			su / num
-			su + num
-			su - num
-		}
+//		for(int i = 0; i < oper.length; i++) {
+//			su * 10 + num
+//			su * num
+//			su / num
+//			su + num
+//			su - num
+//		}
 		return 0;
 	}
 	public static void main(String[] args) {
